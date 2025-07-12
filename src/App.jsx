@@ -1,12 +1,14 @@
 import React from 'react'
 import Sidebar from './Sidebar';
+import Suggestion from './Suggestion';
+import Feed from './Feed';
 
 const App = () => {
   return (
     <div className='d-flex vh-100'>
      <div className='w-20'><Sidebar/></div>
-     <div className='w-50 bg-info'>feed</div>
-     <div>suggestion</div>
+     <div className='w-50'><Feed/></div>
+     <div className='w-30'><Suggestion/></div>
 
     </div>
   )

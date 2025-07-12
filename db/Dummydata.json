@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "profilePicture": "src/assets/user-img1.jpg",
+      "bio": "Photographer | Traveler | Dreamer"
+    },
+    {
+      "id": 2,
+      "username": "janesmith",
+      "profilePicture": "src/assets/user-img2.jpg",
+      "bio": "Lifestyle Blogger 🌿"
+    }
+  ],
+  "posts": [
+    {
+      "id": 101,
+      "userId": 1,
+      "image": "src/assets/dummy-image1.jpg",
+      "caption": "Sunsets and city lights 🌇",
+      "likes": 122,
+      "timestamp": "2025-07-07T17:45:00Z"
+    },
+    {
+      "id": 102,
+      "userId": 2,
+      "image": "src/assets/dummy-image2.jpg",
+      "caption": "Morning vibes ☕️✨",
+      "likes": 89,
+      "timestamp": "2025-07-07T10:12:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 201,
+      "postId": 101,
+      "userId": 2,
+      "text": "Love this shot!",
+      "timestamp": "2025-07-07T18:00:00Z"
+    },
+    {
+      "id": 202,
+      "postId": 102,
+      "userId": 1,
+      "text": "So cozy 😍",
+      "timestamp": "2025-07-07T11:00:00Z"
+    }
+  ],
+  "stories": [
+    {
+      "id": 301,
+      "userId": 1,
+      "image": "src/assets/dummy-image2.jpg",
+      "timestamp": "2025-07-07T08:00:00Z"
+    },
+    {
+      "id": 302,
+      "userId": 2,
+      "image": "src/assets/dummy-image3.jpg",
+      "timestamp": "2025-07-07T08:30:00Z"
+    }
+  ]
+}
