@@ -7,7 +7,7 @@
 .instagram-text-img{
   width: 100px;
 }
-.bi{
+.sidebar .bi{
   margin-right: 10px;
 }
 
@@ -18,4 +18,17 @@
 .profile .profile-pic{
   width: 20px;
   height: 20px;
+}
+.userProfile .profile-pic{
+  width: 35px;
+  height: 35px;
+}
+
+.userProfile .comman{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.userProfile .comman.color{
+  color:#00000070
 }

@@ -28,26 +28,26 @@ const Posts = () => {
                 {posts.map((post) =>{
                     
                     const user = users.find(u => u.id == post.userId);
-                    const postComments = comments.filter(c => c.postId === post.id);
+                    const postComments = comments.find(c => c.userId === post.userId);
                      
                     return (
                       <div key={post.id}>  
 
-                       <div className='d-flex align-items-center' >
+                       <div className='d-flex align-items-center'  >
                          <img className='profile-pic rounded-circle me-2' src={user.profilePicture} alt="profile-image" />
                          <h5>{user.username}</h5>
                        </div>
 
                         {/* post */}
-                       <img src={post.image} alt="post" />
+                       <img src={post.image} alt="post" style={{maxWidth:350}}/>
 
-                       <div className="icons d-flex">
+                       <div className="icons d-flex gap-2 mt-2">
                         <i className="bi bi-heart"></i> 
                         <i className="bi bi-chat-left-dots"></i>
                         <i class="bi bi-send"></i>
                        </div>
-                        <p style={{fontSize:12}}><b>{post.likes}</b> Likes</p>
-                        
+                        <p className='mb-0' style={{fontSize:12}}><b>{post.likes}</b> Likes</p>
+                        <p>{postComments.text}</p>
                        </div>
                 );
                 })}

@@ -3,10 +3,10 @@ import React from 'react';
 
 const Sidebar = () => {
   return (
-    <div className='m-3'>
+    <div className='m-3 position-fixed '>
       <div  className='d-flex flex-column gap-3 '>
         <img className='instagram-text-img' src="src/assets/Instagram-Text.png" alt="" />
-        <div><i className="bi bi-house-door"></i> Home</div>
+        <div><i className="bi bi-house-door "></i> Home</div>
         <div><i className="bi bi-search"></i> Search</div>
         <div><i className="bi bi-compass"></i> Explore</div>
         <div><i className="bi bi-collection-play"></i> Reels</div>

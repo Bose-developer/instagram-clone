@@ -1,4 +1,11 @@
 {
+  "profile": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "profilePicture": "src/assets/user-img1.jpg"
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -11,26 +18,149 @@
       "username": "janesmith",
       "profilePicture": "src/assets/user-img2.jpg",
       "bio": "Lifestyle Blogger 🌿"
-    }
-  ],
-  "posts": [
-    {
-      "id": 101,
-      "userId": 1,
-      "image": "src/assets/dummy-image1.jpg",
-      "caption": "Sunsets and city lights 🌇",
-      "likes": 122,
-      "timestamp": "2025-07-07T17:45:00Z"
     },
     {
-      "id": 102,
-      "userId": 2,
-      "image": "src/assets/dummy-image2.jpg",
-      "caption": "Morning vibes ☕️✨",
-      "likes": 89,
-      "timestamp": "2025-07-07T10:12:00Z"
+      "id": 3,
+      "username": "emilyrose",
+      "profilePicture": "src/assets/user-img3.jpg",
+      "bio": "Writer | Cat mom | Plant lover"
+    },
+    {
+      "id": 4,
+      "username": "travelbug",
+      "profilePicture": "src/assets/dummy-image2.jpg",
+      "bio": "Exploring the world one city at a time 🌍"
+    },
+    {
+      "id": 5,
+      "username": "foodielife",
+      "profilePicture": "src/assets/dummy-image3.jpg",
+      "bio": "Tasting life one bite at a time 🍕🍣🍰"
     }
   ],
+ "posts": [
+  {
+    "id": 101,
+    "userId": 1,
+    "image": "src/assets/dummy-image14.jpg",
+    "caption": "Sunsets and city lights 🌇",
+    "likes": 122,
+    "timestamp": "2025-07-07T17:45:00Z"
+  },
+  {
+    "id": 102,
+    "userId": 2,
+    "image": "src/assets/dummy-image3.jpg",
+    "caption": "Morning vibes ☕️✨",
+    "likes": 89,
+    "timestamp": "2025-07-07T10:12:00Z"
+  },
+  {
+    "id": 103,
+    "userId": 1,
+    "image": "src/assets/dummy-image11.jpg",
+    "caption": "Nature walk through the forest 🌳🍃",
+    "likes": 145,
+    "timestamp": "2025-07-06T15:30:00Z"
+  },
+  {
+    "id": 104,
+    "userId": 3,
+    "image": "src/assets/dummy-image6.jpg",
+    "caption": "Chilling with a good book 📖",
+    "likes": 97,
+    "timestamp": "2025-07-05T12:10:00Z"
+  },
+  {
+    "id": 105,
+    "userId": 4,
+    "image": "src/assets/dummy-image2.jpg",
+    "caption": "Golden hour feels ✨",
+    "likes": 200,
+    "timestamp": "2025-07-04T18:00:00Z"
+  },
+  {
+    "id": 106,
+    "userId": 5,
+    "image": "src/assets/dummy-image13.jpg",
+    "caption": "Exploring the city 🌆",
+    "likes": 83,
+    "timestamp": "2025-07-03T09:25:00Z"
+  },
+  {
+    "id": 107,
+    "userId": 1,
+    "image": "src/assets/dummy-image7.jpg",
+    "caption": "Weekend adventures 🚗",
+    "likes": 176,
+    "timestamp": "2025-07-02T14:40:00Z"
+  },
+  {
+    "id": 108,
+    "userId": 2,
+    "image": "src/assets/dummy-image10.jpg",
+    "caption": "Breakfast with a view 🥞🌄",
+    "likes": 104,
+    "timestamp": "2025-07-01T08:30:00Z"
+  },
+  {
+    "id": 109,
+    "userId": 3,
+    "image": "src/assets/dummy-image1.jpg",
+    "caption": "Studio vibes and creativity flow 🎨",
+    "likes": 190,
+    "timestamp": "2025-06-30T16:45:00Z"
+  },
+  {
+    "id": 110,
+    "userId": 4,
+    "image": "src/assets/dummy-image8.jpg",
+    "caption": "Found this peaceful spot 🧘‍♂️",
+    "likes": 155,
+    "timestamp": "2025-06-29T11:15:00Z"
+  },
+  {
+    "id": 111,
+    "userId": 5,
+    "image": "src/assets/dummy-image4.jpg",
+    "caption": "Dessert first, always 🍰",
+    "likes": 211,
+    "timestamp": "2025-06-28T19:10:00Z"
+  },
+  {
+    "id": 112,
+    "userId": 1,
+    "image": "src/assets/dummy-image12.jpg",
+    "caption": "Captured this view from the cliff 🔭",
+    "likes": 132,
+    "timestamp": "2025-06-27T13:22:00Z"
+  },
+  {
+    "id": 113,
+    "userId": 2,
+    "image": "src/assets/dummy-image15.jpg",
+    "caption": "Ocean breeze and sandy toes 🌊",
+    "likes": 99,
+    "timestamp": "2025-06-26T17:55:00Z"
+  },
+  {
+    "id": 114,
+    "userId": 3,
+    "image": "src/assets/dummy-image5.jpg",
+    "caption": "Late night journaling ✍️",
+    "likes": 142,
+    "timestamp": "2025-06-25T22:00:00Z"
+  },
+  {
+    "id": 115,
+    "userId": 4,
+    "image": "src/assets/dummy-image9.jpg",
+    "caption": "Woke up to this sunrise 😍",
+    "likes": 188,
+    "timestamp": "2025-06-24T06:45:00Z"
+  }
+],
+
   "comments": [
     {
       "id": 201,
@@ -45,20 +175,73 @@
       "userId": 1,
       "text": "So cozy 😍",
       "timestamp": "2025-07-07T11:00:00Z"
-    }
-  ],
-  "stories": [
-    {
-      "id": 301,
-      "userId": 1,
-      "image": "src/assets/dummy-image2.jpg",
-      "timestamp": "2025-07-07T08:00:00Z"
     },
     {
-      "id": 302,
+      "id": 203,
+      "postId": 103,
+      "userId": 3,
+      "text": "That trail looks magical 🌿",
+      "timestamp": "2025-07-06T16:00:00Z"
+    },
+    {
+      "id": 204,
+      "postId": 104,
       "userId": 2,
-      "image": "src/assets/dummy-image3.jpg",
-      "timestamp": "2025-07-07T08:30:00Z"
+      "text": "Perfect lazy day activity 📚",
+      "timestamp": "2025-07-05T13:20:00Z"
+    },
+    {
+      "id": 205,
+      "postId": 105,
+      "userId": 5,
+      "text": "Lighting goals 🔥",
+      "timestamp": "2025-07-04T19:00:00Z"
+    },
+    {
+      "id": 206,
+      "postId": 106,
+      "userId": 4,
+      "text": "Urban adventures hit different!",
+      "timestamp": "2025-07-03T10:00:00Z"
+    },
+    {
+      "id": 207,
+      "postId": 107,
+      "userId": 1,
+      "text": "Took the scenic route 🚙",
+      "timestamp": "2025-07-02T15:00:00Z"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 401,
+      "username": "emilyrose",
+      "profilePicture": "src/assets/dummy-image2.jpg",
+      "reason": "Followed by johndoe"
+    },
+    {
+      "id": 402,
+      "username": "travelbug",
+      "profilePicture": "src/assets/user-img2.jpg",
+      "reason": "New to Instagram"
+    },
+    {
+      "id": 403,
+      "username": "foodielife",
+      "profilePicture": "src/assets/user-img3.jpg",
+      "reason": "Suggested for you"
+    },
+    {
+      "id": 404,
+      "username": "naturelover",
+      "profilePicture": "src/assets/dummy-image3.jpg",
+      "reason": "Popular in your area"
+    },
+    {
+      "id": 405,
+      "username": "techsavvy",
+      "profilePicture": "src/assets/dummy-image1.jpg",
+      "reason": "You both follow janesmith"
     }
   ]
 }
