@@ -1,25 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
-const Sidebar = () => {
+const Sidebar = ({className, position}) => {
+
+   const [sidebar, setSidebar] = useState([]);
+
+   useEffect(()=>{
+    fetch('http://localhost:3000/sidebar')
+    .then((res) => res.json())
+    .then(data => setSidebar(data))
+    .catch((err) => console.log(err))
+   },[])
+
   return (
-    <div className='m-3 position-fixed '>
-      <div  className='d-flex flex-column gap-3 '>
-        <img className='instagram-text-img' src="src/assets/Instagram-Text.png" alt="" />
-        <div><i className="bi bi-house-door "></i> Home</div>
-        <div><i className="bi bi-search"></i> Search</div>
-        <div><i className="bi bi-compass"></i> Explore</div>
-        <div><i className="bi bi-collection-play"></i> Reels</div>
-        <div><i className="bi bi-chat-left-dots"></i> Messages</div>
-        <div><i className="bi bi-heart"></i> Notification</div>
-        <div><i className="bi bi-plus-square"></i> Create</div>
-        <div><i className="bi bi-person-circle"></i> Profile</div>
+      <div className={`${className} `} style={{borderRight: '1px solid #00000038'}}>
+       {sidebar.length > 0  ? (
+            <div className={`d-flex justify-content-between flex-column vh-100 m-3 py-3 ${position}`}>
+              <img className='instagram-text-img d-none d-xl-block' style={{maxWidth:100}} src="src/assets/Instagram-Text.png" alt="" />
+              <img className='instagram-text-img d-none d-md-block  d-xl-none py-4' src="src/assets/Instagram.svg" alt="" />
+           <div>
+            {sidebar.slice(0, -2).map((data, index) => (
+                  <div className='d-flex' key={index}>
+                    <i className={`${data.iconClass} me-2 pb-3`}></i>
+                    <p className='d-none d-xl-block p-0'>{data.label}</p>
+                  </div>
+                ))}
+            </div>
+            <div className='mt-auto d-none d-md-block'>
+              {sidebar.slice(-2).map((data, index) => (
+                  <div className='d-flex ' key={`last-${index}`}>
+                    <i className={`${data.iconClass} me-2 pb-3`}></i>
+                    <p className='d-none d-xl-block p-0'>{data.label}</p>
+                  </div>
+              ))}  
+            </div>
+           </div> 
+       ):(
+        <p>Loading...</p>
+       )}
       </div>
-      <div  className='d-flex flex-column gap-3 position-fixed bottom-0 mb-3'>
-        <div><i className="bi bi-threads"></i> Threads</div> 
-        <div><i className="bi bi-three-dots"></i> More</div>
-      </div>
-    </div>
   );
 };
 

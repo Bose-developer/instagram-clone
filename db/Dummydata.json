@@ -1,4 +1,48 @@
 {
+"sidebar" : [
+  {
+    "label": "Home",
+    "iconClass": "bi bi-house-door"
+  },
+  {
+    "label": "Search",
+    "iconClass": "bi bi-search"
+  },
+  {
+    "label": "Explore",
+    "iconClass": "bi bi-compass"
+  },
+  {
+    "label": "Reels",
+    "iconClass": "bi bi-collection-play"
+  },
+  {
+    "label": "Messages",
+    "iconClass": "bi bi-chat-left-dots"
+  },
+  {
+    "label": "Notification",
+    "iconClass": "bi bi-heart"
+  },
+  {
+    "label": "Create",
+    "iconClass": "bi bi-plus-square"
+  },
+  {
+    "label": "Profile",
+    "iconClass": "bi bi-person-circle"
+  },
+   {
+    "label": "Threads",
+    "iconClass": "bi bi-threads"
+  },
+   {
+    "label": "More",
+    "iconClass": "bi bi-three-dots"
+  }
+],
+
+
   "profile": [
     {
       "id": 1,
@@ -122,7 +166,7 @@
   {
     "id": 111,
     "userId": 5,
-    "image": "src/assets/dummy-image4.jpg",
+    "image": "src/assets/dummy-image2.jpg",
     "caption": "Dessert first, always 🍰",
     "likes": 211,
     "timestamp": "2025-06-28T19:10:00Z"

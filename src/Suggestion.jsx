@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Suggestion = () => {
+const Suggestion = ({className}) => {
  
    const [profile, setprofile] = useState([]);
    const [suggestions, setSuggestions] = useState([]);
@@ -25,9 +25,9 @@ const Suggestion = () => {
    },[]);
 
   return (
-  <div className='border border-dark m-2'>
+  <div className={`${className}`}>
      {profile.length > 0 ? (
-      <div className='userProfile'>
+      <div className='userProfile border border-dark m-5'>
         {profile.map((user) => (
           <div  key={user.id} className='comman'>
                <img className='profile-pic rounded-circle me-2' src={user.profilePicture} alt="profile-image" />

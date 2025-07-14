@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Posts = () => {
+const Posts = ({props}) => {
 
     const [posts, setPosts] = useState([]);
     const [users, setUsers] = useState([]);
@@ -31,7 +31,7 @@ const Posts = () => {
                     const postComments = comments.find(c => c.userId === post.userId);
                      
                     return (
-                      <div key={post.id}>  
+                      <div style={{borderBottom:'1px solid #00000070'}} key={post.id} >  
 
                        <div className='d-flex align-items-center'  >
                          <img className='profile-pic rounded-circle me-2' src={user.profilePicture} alt="profile-image" />
@@ -39,12 +39,13 @@ const Posts = () => {
                        </div>
 
                         {/* post */}
-                       <img src={post.image} alt="post" style={{maxWidth:350}}/>
+                       <img src={post.image} alt="post" style={{maxWidth:400,width:'100%',border:'1px solid #00000020',borderRadius:5}}/>
 
                        <div className="icons d-flex gap-2 mt-2">
                         <i className="bi bi-heart"></i> 
                         <i className="bi bi-chat-left-dots"></i>
                         <i class="bi bi-send"></i>
+                        <i class="bi bi-bookmark ms-auto  "></i>
                        </div>
                         <p className='mb-0' style={{fontSize:12}}><b>{post.likes}</b> Likes</p>
                         <p>{postComments.text}</p>
