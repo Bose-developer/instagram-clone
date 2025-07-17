@@ -287,5 +287,39 @@
       "profilePicture": "src/assets/dummy-image1.jpg",
       "reason": "You both follow janesmith"
     }
-  ]
+  ],
+  "story": [
+  {
+    "id": 1,
+    "userId": 1,
+    "image": "src/assets/story1.jpg",
+    "timestamp": "2025-07-07T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "image": "src/assets/story2.jpg",
+    "timestamp": "2025-07-07T09:30:00Z"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "image": "src/assets/story3.jpg",
+    "timestamp": "2025-07-07T10:45:00Z"
+  },
+  {
+    "id": 4,
+    "userId": 4,
+    "image": "src/assets/story4.jpg",
+    "timestamp": "2025-07-07T11:15:00Z"
+  },
+  {
+    "id": 5,
+    "userId": 5,
+    "image": "src/assets/story5.jpg",
+    "timestamp": "2025-07-07T12:00:00Z"
+  }
+  
+]
+
 }
