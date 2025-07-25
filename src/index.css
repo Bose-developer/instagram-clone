@@ -11,6 +11,9 @@
   width: 20px;
   height: 20px;
 }
+.userProfile{
+  max-width: 250px;
+}
 .userProfile .profile-pic{
   width: 35px;
   height: 35px;
@@ -36,3 +39,50 @@
   display: block;
   background-color: white;
 }
+
+.bi-arrow-left-circle::before,.bi-arrow-right-circle::before{
+    font-size: 35px;
+    color: #000;
+    background: #ffffff26;
+    border-radius: 50px;
+}
+.bi-arrow-left-circle:hover::before,.bi-arrow-right-circle:hover::before{
+    background: #fff;
+}
+.view-stories .story-image{
+  width: 35%;
+  position: relative;
+ }
+.view-stories .story-image .story-image-replay{
+  position: absolute;
+  bottom: 0px;
+  padding:20px 10px;
+  background: #00000081;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+ .view-stories .story-image .story-image-replay .story-input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    background: transparent;
+}
+ .view-stories .story-image .story-image-replay .story-input::placeholder{
+  color: #FFF;
+ }
+
+ .view-stories .story-image .story-image-replay .bi-heart::before, 
+ .view-stories .story-image .story-image-replay .bi-send::before{
+  font-size: 25px;
+  color: #fff;
+ }
+
+ .sidebar-icon::before{
+  font-size: 20px;
+  margin-right: 20px;
+ }

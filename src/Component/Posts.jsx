@@ -24,7 +24,7 @@ const Posts = ({props}) => {
   return (
     <div className='d-flex justify-content-center'>
          {posts.length > 0 ? (
-            <div className='profile d-flex flex-column gap-3'>
+            <div className='profile d-flex flex-column gap-3 w-75'>
                 {posts.map((post) =>{
                     
                     const user = users.find(u => u.id == post.userId);
@@ -33,13 +33,13 @@ const Posts = ({props}) => {
                     return (
                       <div style={{borderBottom:'1px solid #00000070'}} key={post.id} >  
 
-                       <div className='d-flex align-items-center'  >
+                       <div className='d-flex align-items-center py-3'  >
                          <img className='profile-pic rounded-circle me-2' src={user.profilePicture} alt="profile-image" />
                          <h5>{user.username}</h5>
                        </div>
 
                         {/* post */}
-                       <img src={post.image} alt="post" style={{maxWidth:400,width:'100%',border:'1px solid #00000020',borderRadius:5}}/>
+                       <img src={post.image} alt="post" style={{width:'100%',border:'1px solid #00000020',borderRadius:5}}/>
 
                        <div className="icons d-flex gap-2 mt-2">
                         <i className="bi bi-heart"></i> 

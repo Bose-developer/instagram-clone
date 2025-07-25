@@ -20,8 +20,8 @@ const Sidebar = ({className, position}) => {
               <img className='instagram-text-img d-none d-md-block  d-xl-none py-4' src="src/assets/Instagram.svg" alt="" />
            <div>
             {sidebar.slice(0, -2).map((data, index) => (
-                  <div className='d-flex' key={index}>
-                    <i className={`${data.iconClass} me-2 pb-3`}></i>
+                  <div className='d-flex align-items-center' key={index}>
+                    <i className={`${data.iconClass} sidebar-icon pb-3`}></i>
                     <p className='d-none d-xl-block p-0'>{data.label}</p>
                   </div>
                 ))}
